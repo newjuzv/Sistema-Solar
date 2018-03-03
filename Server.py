@@ -133,6 +133,7 @@ if __name__ == "__main__":
 
     sis = SistemaSolar()
 
+#Inicializa el bluetooth
 
     hostMACAddress = 'D0:7E:35:F8:D7:06' # The MAC address of a Bluetooth adapter on the server. The server might have multiple Bluetooth adapters.
     port = 3
