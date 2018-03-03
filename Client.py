@@ -7,7 +7,7 @@ import socket
 
 serverMACAddress = 'D0:7E:35:F8:D7:06'
 port = 3
-message = 'Hola Mae'
+message = input()
 
 print 'Starting the socket config ...'
 s = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
