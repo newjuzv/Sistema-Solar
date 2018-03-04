@@ -2,7 +2,7 @@
 # coding=utf-8
 
 import numpy as np
-#import RPi.GPIO as GPIO #importamos la libreria y cambiamos su nombre por "GPIO"
+import RPi.GPIO as GPIO #importamos la libreria y cambiamos su nombre por "GPIO"
 import time #necesario para los delays
 #import socket
 import bluetooth
@@ -47,7 +47,15 @@ class SistemaSolar(object):
 
     def number_0(self):
 
-        GPIO.cleanup()  #devuelve los pines a su estado inicial
+        GPIO.output(5, GPIO.LOW)
+        GPIO.output(6, GPIO.LOW)
+        GPIO.output(13, GPIO.LOW)
+        GPIO.output(19, GPIO.LOW)
+        GPIO.output(26, GPIO.LOW)
+        GPIO.output(12, GPIO.LOW)
+        GPIO.output(16, GPIO.LOW)
+        GPIO.output(20, GPIO.LOW)
+        GPIO.output(21, GPIO.LOW)
         
         return "Apagado"
 
@@ -123,7 +131,7 @@ if __name__ == "__main__":
 
 #Inicializa el bluetooth
 
-    hostMACAddress = 'D0:7E:35:F8:D7:06' # The MAC address of a Bluetooth adapter on the server. The server might have multiple Bluetooth adapters.
+    hostMACAddress = 'B8:27:EB:AC:C6:5D' # The MAC address of a Bluetooth adapter on the server. The server might have multiple Bluetooth adapters.
     port = 3
     backlog = 1
     size = 1024
@@ -144,7 +152,15 @@ if __name__ == "__main__":
         s.close()
 
 
-    GPIO.cleanup()  #devuelve los pines a su estado inicial
+    GPIO.output(5, GPIO.LOW)
+    GPIO.output(6, GPIO.LOW)
+    GPIO.output(13, GPIO.LOW)
+    GPIO.output(19, GPIO.LOW)
+    GPIO.output(26, GPIO.LOW)
+    GPIO.output(12, GPIO.LOW)
+    GPIO.output(16, GPIO.LOW)
+    GPIO.output(20, GPIO.LOW)
+    GPIO.output(21, GPIO.LOW)
 
 
 

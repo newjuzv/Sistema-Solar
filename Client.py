@@ -5,7 +5,7 @@ Python sockets (with Python 3.3 or above).
 
 import socket
 
-serverMACAddress = 'D0:7E:35:F8:D7:06'
+serverMACAddress = 'B8:27:EB:AC:C6:5D'
 port = 3
 message = input()
 
